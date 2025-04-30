@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: Power BI Query Assistant API
+  description: API para enviar preguntas a Power BI a través de Azure Function.
+  version: "1.0.0"
+servers:
+  - url: https://powerbi-chatgpt-transportes-oro.azurewebsites.net/api
+paths:
+  /AskPowerBI:
+    get:
+      operationId: askPowerBI
+      summary: Envía una pregunta a Power BI
+      parameters:
+        - name: question
+          in: query
+          description: Pregunta que se desea hacer al dataset de Power BI
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Respuesta exitosa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  question:
+                    type: string
+                  answer:
+                    type: string
+                  source:
+                    type: string
+                  timestamp:
+                    type: string

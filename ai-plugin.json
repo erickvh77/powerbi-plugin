@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Power BI Query Assistant",
+  "name_for_model": "powerbi_query_assistant",
+  "description_for_human": "Consulta datasets de Power BI y obtiene respuestas.",
+  "description_for_model": "Permite hacer preguntas a datasets de Power BI usando Azure Function como puente.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://erickvh77.github.io/powerbi-plugin/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_BI_Logo.svg",
+  "contact_email": "soportesistemas@transportesoro.com.co",
+  "legal_info_url": "https://www.microsoft.com/en-us/legal"
+}
